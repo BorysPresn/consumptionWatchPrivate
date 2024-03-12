@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* login and register pages */
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #198754c4;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.header-title-icon{
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+    background-position-y: 100%;
+    vertical-align: middle;
+    background-image: url(../img/favicon.png);
+}
+.header-title h1 {
+    white-space: nowrap;
+}
+.margin-top-block {
+    margin-top: 96px;
+}
+.wrapper {
+    margin-top: -5px;
+}
+.nav-item{
+    padding: 0 .5rem 0 .5rem;
+    transition: all .2s;
+}
+.nav-item .nav-link {
+    color: #fff;
+}
+.nav-item:hover {
+    background: #ffffff25;
+}
+.active {
+    background-color: #ffffff35;
+}
+.record-item {
+    white-space: nowrap;
+    background-color: #9b9b9b30;
+}
+.margin-top-20px {
+    margin-top: .75rem;
+}
+.last-record-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+.error {
+    border: .25rem solid #871919c4;
+}
+@media (max-width: 502px) {
+    .header-title h3{
+        font-size: 14px;
+    }
+    .header-title h1 {
+        white-space: wrap;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .header-title {
+        left: 60%!important;
+    }
+    .header-title h1 {
+        font-size: calc(1rem + .75vw);
+    }
+}
+
+@media (min-width: 576px) { /* Для small devices */
+    .custom-gap-adjustment {
+        flex: 0 0 calc(50% - 4px); /* Коррекция для 2 элементов в ряд */
+        max-width: calc(50% - 4px); /* Коррекция для 2 элементов в ряд */
+    }
+}
+
+@media (min-width: 768px) { /* Для medium devices */
+    .custom-gap-adjustment {
+        flex: 0 0 calc(100% / 3 - 4px); /* Коррекция для 3 элементов в ряд */
+        max-width: calc(100% / 3 - 4px); /* Коррекция для 3 элементов в ряд */
+    }
+}
+.history-select {
+    font-size: 1.75rem!important;
+    font-weight: 700!important;
+    outline: 0;
+    padding-bottom: 2px;
+    padding-top: 0;
+
+}
+/* .history-select option {
+    padding: 5px;
+} */
